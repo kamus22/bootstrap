@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap</title>
+</head>
+<body onresize=detectarTamanio()>
+
+    <div class="row">
+        <header class="col-12 bg-primary p-3 pl-5 text-white">
+            <h1>Curso Stack MEAN - Bootstrap</h1>
+            <h1>Ancho <i id="ancho"></i></h1>
+            <h1>Alto <i id="alto"></i></h1>
+        </header>
+
+        <nav id="menu" class="col-12 bg-secondary text-white d-none d-md-block">
+            <ul class="row w-50">
+                <li class="col col-sm-12 col-md">Inicio</li>
+                <li class="col col-sm-12 col-md">Pagina 1</li>
+                <li class="col col-sm-12 col-md">Pagina 2</li>
+                <li class="col col-sm-12 col-md">Pagina 3</li>
+                <li class="col col-sm-12 col-md">Contactos</li>
+            </ul>
+        </nav>
+     
+        <script>
+
+            function detectarTamanio(){
+
+                var x = document.getElementById("ancho");
+                // x.innerHTML = window.outerWidth + "px"
+                x.innerHTML = document.documentElement.scrollWidth + "px"
+                var y = document.getElementById("alto");
+                // y.innerHTML = window.outerHeight + "px";
+                y.innerHTML = document.documentElement.scrollHeight + "px";
+            }
+            detectarTamanio();
+
+        </script>
+<!-- cuerpo -->
+
+        <section id="content" class="col-12">
+
+            <div class="row">
+
+                <section id="products" class="col-9 border col-sm-12 col-md-9">
+                    <h2>Productos</h2> 
+                    <hr>
+
+                    <div class="items row mt-5 justify-content-around">
+
+                        <div class="item col-lg col-md-12 col-sm-12 col bg-primary">
+                            Producto
+                        </div>
+                        <div class="item col-lg col-md-6 col-sm-6 col bg-warning">
+                            Producto
+                        </div>
+                        <div class="item col-lg col-md-6 col-se-6 col bg-danger">
+                            Producto
+                        </div>                  
+
+                    </div>
+                    
+                    <div class="items row mt-5 justify-content-around">
+
+                        <div class="item col-lg col-md-12 col-sm-12 col bg-primary">
+                            Producto
+                        </div>
+                        <div class="item col-lg col-md-6 col-sm-6 col bg-warning">
+                            Producto
+                        </div>
+                        <div class="item col-lg col-md-6 col-se-6 col bg-danger">
+                            Producto
+                        </div>                  
+
+                    </div>          
+
+                    <div class="items row mt-5 justify-content-around">
+
+                        <div class="item col-lg col-md-12 col-sm-12 col bg-primary">
+                            Producto
+                        </div>
+                        <div class="item col-lg col-md-6 col-sm-6 col bg-warning">
+                            Producto
+                        </div>
+                        <div class="item col-lg col-md-6 col-se-6 col bg-danger">
+                            Producto
+                        </div>                  
+
+                    </div>          
+                    
+                </section>
+
+                <aside class="col-3 border d-none d-sm-none d-md-block">
+                    <h2>Barra Lateral</h2>
+                    <div class="lateral row bg-dark">
+                        
+                        <div class="col-12 bg-primary">
+                            Elemento 1
+                        </div>
+
+                        <div  class="col-12 bg-success">
+                            Elemento 2
+                        </div>
+
+                        <div class="col-12 bg-warning">
+                            Elemento 3
+                        </div>
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>    
+
+        <footer class="col-12 bg-info">
+            Stack Mean
+        </footer>
+    </div>
+
+   
+    
+    <script type="text/javascript" src="jquery/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
