@@ -8,6 +8,12 @@
     line-height: 50px;
 }
 
+#ejercicio {
+    color: #000;
+    text-size: 15px;
+    font-weight: bold
+}
+
 .item {
     height: 150px;
 }
